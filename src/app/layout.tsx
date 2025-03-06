@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export default function DashboardLayout({
   children,
 }: {
@@ -6,9 +8,9 @@ export default function DashboardLayout({
   return (
     <html lang="en">
       <body>
-        {/* Layout UI */}
-        {/* Place children where you want to render a page or nested layout */}
+        <header className="bg-red-200">HEADER</header>
         <main>{children}</main>
+        <footer className="bg-green-200">FOOTER</footer>
       </body>
     </html>
   );
