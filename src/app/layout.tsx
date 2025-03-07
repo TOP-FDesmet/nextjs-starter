@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
+import Header from "./components/header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,9 @@ export default function DashboardLayout({
   return (
     <html lang="en">
       <body>
-        <header className="bg-red-200">HEADER</header>
+        <header className="bg-red-200">
+          <Header />
+        </header>
         <main>{children}</main>
         <footer className="bg-green-200">FOOTER</footer>
       </body>
